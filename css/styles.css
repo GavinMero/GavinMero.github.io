@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+  background-color: rgb(154, 205, 220);
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+nav {
+  grid-column: 1 / 4;
+  grid-row: 1;
+  background-color: rgb(154, 220, 169);
+}
+
+.headshot {
+  grid-column: 1;
+  grid-row: 2 / 4;
+  background-color: rgb(215, 154, 220);
+}
+
+.contact {
+  grid-column: 1;
+  grid-row: 4;
+  background-color: rgb(220, 185, 154);
+}
+
+.content {
+  grid-column: 2 / 4;
+  grid-row: 2 / 5;
+  background-color: rgb(196, 197, 223);
+}

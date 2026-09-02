@@ -1,0 +1,143 @@
+/*-----------------------------------*/
+/* BLOG PAGE */
+/*-----------------------------------*/
+
+.blog-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    padding-top: calc(20vh + 40px);
+}
+
+.blog-main > h2 {
+    margin-bottom: 30px;
+}
+
+.blog-post-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    max-width: 700px;
+}
+
+.blog-post-preview {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post-preview h3 {
+    margin-bottom: 8px;
+}
+
+.blog-post-preview h3 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.blog-post-preview h3 a:hover {
+    text-decoration: underline;
+}
+
+.post-meta {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 12px;
+}
+
+.post-excerpt {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.read-more {
+    font-size: 14px;
+    color: rgb(253, 22, 60);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+
+/*-----------------------------------*/
+/* BLOG POST PAGE */
+/*-----------------------------------*/
+
+.blog-post-main {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    padding-top: calc(20vh + 40px);
+}
+
+.blog-post {
+    width: 100%;
+    max-width: 700px;
+}
+
+.back-to-blog {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: rgb(253, 22, 60);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-to-blog:hover {
+    text-decoration: underline;
+}
+
+.post-title {
+    margin-bottom: 8px;
+}
+
+.blog-post .post-meta {
+    margin-bottom: 30px;
+}
+
+.post-body h2 {
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+
+.post-body p {
+    margin-bottom: 16px;
+    line-height: 1.6;
+}
+
+.post-body pre {
+    background-color: rgb(30, 30, 30);
+    color: rgb(220, 220, 220);
+    padding: 16px;
+    border-radius: 6px;
+    overflow-x: auto;
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+
+.post-body code {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.post-body img {
+    max-width: 100%;
+    border-radius: 6px;
+    margin-bottom: 16px;
+}
+
+.post-body ul,
+.post-body ol {
+    margin-bottom: 16px;
+    padding-left: 24px;
+}
+
+.post-body li {
+    margin-bottom: 8px;
+}

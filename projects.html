@@ -3,10 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Gavin Mero</title>
+        <title>Gavin Mero | Projects</title>
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/projects.css">
     </head>
-    <body>
+
+    <body class="projects-page">
+
         <header>
 
             <section class="left-header">
@@ -14,32 +17,77 @@
                 <h2>Projects</h2>
             </section>
 
-            <nav>                    
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="resume_page.html">Resume</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resume_page.html">Resume</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
             </nav>
+
         </header>
 
-        <main>  
-            <section class="headshot">
-                <img src="assets/images/headshot_placeholder.png" alt="Gavin Mero Headshot">
+
+        <main>
+
+            <section class="project-navigation">
+
+                <div class="project-header">
+                    <h2>My Projects</h2>
+
+                    <button class="sidebar-toggle" type="button">☰</button>
+                </div>
+
+                <ul>
+                    <li>
+                        <button class="project-button" data-project="portfolio">
+                            Portfolio Website
+                        </button>
+                    </li>
+
+                    <li>
+                        <button class="project-button" data-project="homelab">
+                            Enterprise Infrastructure Homelab
+                        </button>
+                    </li>
+
+                    <li>
+                        <button class="project-button" data-project="docker">
+                            Docker Labs
+                        </button>
+                    </li>
+
+                    <li>
+                        <button class="project-button" data-project="kubernetes">
+                            Kubernetes Project
+                        </button>
+                    </li>
+                </ul>
+
             </section>
 
-            <section class="contact">
-                <p>"contact"</p>
+
+            <section class="project-content">
+
+                <h2 id="project-title">
+                    Check out all the different projects I've done!
+                </h2>
+
+                <p id="project-description">
+                    Select a project to learn more about it.
+                </p>
+
             </section>
 
-            <section class="content">
-                <p>"content"</p>
-            </section>
         </main>
-    
+
+
         <footer>
         </footer>
+
+        <script src="js/navbar.js"></script>
+        <script src="js/projects.js"></script>
 
     </body>
 </html>

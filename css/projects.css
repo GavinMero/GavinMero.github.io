@@ -11,7 +11,7 @@
 }
 
 .project-navigation {
-    background-color: rgb(215, 154, 220);
+    background-color: rgb(30, 33, 41);
     padding: 30px;
     overflow: hidden;
 
@@ -31,7 +31,7 @@
 }
 
 .project-content {
-    background-color: rgb(196, 197, 223);
+    background-color: white;
     padding: 50px;
 }
 
@@ -45,6 +45,7 @@
 .project-header h2 {
     font-size: 20px;
     line-height: 1;
+    color: white;
 }
 
 
@@ -61,17 +62,20 @@
 
     text-align: left;
     font-size: 18px;
+    color: rgb(230, 230, 235);
 
     cursor: pointer;
 }
 
 .project-button:hover {
-    background-color: rgb(190, 130, 195);
+    background-color: rgb(200, 30, 60);
+    color: white;
     font-weight: bold;
 }
 
 .project-button.active {
-    background-color: rgb(180, 120, 185);
+    background-color: rgb(170, 25, 50);
+    color: white;
     font-weight: bold;
 }
 
@@ -83,12 +87,13 @@
 .sidebar-toggle {
     padding: 10px 15px;
 
-    background-color: rgb(235, 200, 240);
+    background-color: rgb(60, 64, 74);
     border: none;
     border-radius: 4px;
 
     font-size: 24px;
     line-height: 1;
+    color: white;
     cursor: pointer;
 
     flex-shrink: 0;
@@ -97,7 +102,7 @@
 }
 
 .sidebar-toggle:hover {
-    background-color: rgb(190, 130, 195);
+    background-color: rgb(200, 30, 60);
 }
 
 
@@ -131,4 +136,46 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+/*-----------------------------------*/
+/* PROJECTS PAGE - MOBILE */
+/*-----------------------------------*/
+
+@media (max-width: 700px) {
+
+    .projects-page main {
+        grid-template-columns: 1fr;
+        min-height: unset;
+    }
+
+    .project-navigation {
+        padding: 20px;
+    }
+
+    .project-content {
+        padding: 30px 20px;
+    }
+
+    /* On mobile, the collapse behaves like an accordion instead of a width shrink */
+    .projects-page main.collapsed {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-page main.collapsed .project-navigation {
+        padding: 15px 20px;
+        align-items: stretch;
+    }
+
+    .projects-page main.collapsed .project-header {
+        justify-content: space-between;
+    }
+
+    .projects-page main.collapsed .sidebar-toggle {
+        width: auto;
+        height: auto;
+        padding: 10px 15px;
+    }
+
 }

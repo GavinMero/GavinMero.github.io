@@ -8,10 +8,6 @@ const projectDescription = document.querySelector("#project-description");
 
 
 const projects = {
-    portfolio: {
-        title: "Portfolio Website",
-        description: "A personal portfolio website built with HTML, CSS, JavaScript, and GitHub Pages."
-    },
 
     homelab: {
         title: "Enterprise Infrastructure Homelab",
